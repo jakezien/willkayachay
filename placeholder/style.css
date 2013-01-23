@@ -1,0 +1,40 @@
+body {
+	background: url(bg.jpg) fixed center center;
+	background-size: cover;
+;
+}
+
+#text {
+	margin-top:	75px;
+	color: #fff;
+	font-family:"Apercu";
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: ce;
+}
+
+#text h1 {
+	font-weight:normal;
+	font-size: 45px;
+	line-height:50px;
+	letter-spacing: -1px
+}
+
+#text h2 {
+	font-weight:normal;
+	width: 350px;
+	color: #1e3f73;
+	font-size: 18px;
+	line-height: 20px;
+	letter-spacing: 0px;
+}
+
+#text a{
+	font-weight:normal;
+	color: #1e3f73;
+}
+
+#text a:hover{
+	color: #d83027;
+}

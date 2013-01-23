@@ -1,0 +1,886 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+/*     overflow-x: hidden;  */
+/*     overflow-y: scroll; */
+    -webkit-overflow-scrolling: touch;
+}
+
+.pagewrap {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+/* CLASSES
+------------------------------- */
+
+.clearfix {
+	clear: both;
+}
+
+section.brown {
+	background: #332f2d;
+	color: #c0817a;
+	padding: 24px 50px 40px 50px;
+	height: auto;
+}
+
+section.brown div.brown-container {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section.brown h1{
+	font-family: "Apercu Regular", "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 36px;
+    margin-top: 18px;
+}
+
+section.brown div.brown-left{
+	float:left;
+	width:45%;
+	min-width: 340px;
+	max-width: 440px;
+	padding-right: 28px;
+}
+
+section.brown div.brown-right{
+	float:left;
+	width: 45%;
+	min-width: 340px;
+	max-width: 440px;
+}
+
+section.brown p{
+	font-family: "Gentium Book Basic", Georgia, serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+}
+
+section.brown hr {
+	height: 3px;
+	background-color: #c0817a;
+	color: #c0817a;
+	text-align: left;
+	margin: 40px 0px 45px 0px;
+	border: none;	
+}
+
+section.photo {
+	background: 50% 0 no-repeat;
+	min-height: 700px;
+}
+
+section.chapterCover {
+	background: no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 670px;
+}
+
+section.chapterCover h1{
+	color:#FFFFFF;
+	font: 128px "Gentium Basic", Georgia, serif;
+	font-weight: bold;
+	margin: 0px;
+	letter-spacing: -2px;
+}
+
+section.chapterCover h2{
+	color:#d83027;
+	font: 32px "Apercu Bold", "Helvetica Neue", Helvetica, sans-serif;
+	letter-spacing: 2px;
+	text-shadow: 0px 1px rgba(0,0,0,200);
+	margin: 0px;
+}
+
+section.photo {
+	position: relative;
+}
+
+div.caption {
+	background: #fff;
+	font: 16px "Apercu Regular", "Helvetica Neue", Helvetica, serif;
+	line-height: 24px;
+	padding: 24px;
+	position: absolute;
+	color: #d83027;
+}
+
+
+/* NAV
+------------------------------- */
+nav {
+	background: #ffffff;
+	color:#d83027;
+	font-family: "Apercu Regular", "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	position: fixed;
+	z-index: 1000;
+	right:0;
+	top:0;
+	width: 80px;
+	text-align: center;
+}
+
+nav a{
+	text-decoration: none;
+	color:inherit;
+}
+
+nav a:hover{
+	font-family: "Apercu Bold", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+nav ul{
+	padding: 4px 0px 14px 0px;
+	margin: 0px;
+}
+
+nav li{
+	list-style: none;
+	padding: 10px 0px 0px 0px;
+}
+
+
+
+/* INTRO
+------------------------------- */
+
+#intro-cover {
+	height: 850px;
+	background: #ffffff;
+	width: 100%;
+}	
+
+#intro-cover-logo {
+	background: url('../images/logo.jpg');
+	width:270px;
+	height: 319px;
+	margin-top: 80px;
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+#intro-cover-scrollDown {
+	background: url('../images/scrollDown.svg');
+	width: 100px;
+	height: 100px;
+	margin-top: 100px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+	-webkit-animation: scrollDown 2s 2s infinite;
+	-webkit-animation-play-state: running;
+	
+	-moz-animation: scrollDown 2s 2s infinite;
+	-moz-animation-play-state: running;
+	
+	-ms-animation: scrollDown 2s 2s infinite;
+	-ms-animation-play-state: running;
+	
+	-o-animation: scrollDown 2s 2s infinite;
+	-o-animation-play-state: running;
+	
+	animation: scrollDown 2s 2s infinite;
+	animation-play-state: running;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+	#intro-cover-scrolldown { 
+	    height: 400px;
+	    width: 400px;
+    }
+}
+
+#intro-lifeIsHard {
+	margin-top: 300px;
+	background: url('../images/lifeIsHard.jpg');
+	background-position: center center;
+	background-size: cover;
+	min-height: 1320px;
+}
+
+#intro-lifeIsHard-container {
+	text-align: center;
+	height: 200px;
+	padding-top: 30px;
+}
+
+#intro-lifeIsHard h1 {
+	font-family: "Apercu Regular", "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 54px;
+	font-size-adjust:0.5; 
+	letter-spacing: -2px;
+	line-height: 68px;
+	color: #d83027;
+}
+
+#intro-lifeIsHard h2 {
+	font-family: "Gentium Basic", Georgia, serif;
+	font-weight: bold;
+	font-size: 32px;
+	font-weight: normal;
+	color: #332f2d;
+	margin-top: 18px;
+}
+
+
+#intro-brown h1{
+	max-width: 500px;
+}
+
+#intro-brown hr{
+	width: 477px;
+}
+
+
+
+/* Q'EROS
+================================================== */
+
+#qeros-cover {
+	background-image: url('../images/qeros-cover.jpg');
+	position: relative;
+}
+
+#qeros-cover-container{
+	position: absolute; 
+	margin: 180px 0px 0px 110px;
+}
+
+#qeros-cover h2{
+	margin-left: 10px;
+}
+
+
+#qeros-textile {
+	background: url('../images/weaving.jpg') no-repeat;
+	background-size: cover;
+	background-position: 420px 50%;
+	position: relative;
+/* 	margin-left: auto; */
+/* 	margin-right: auto; */
+	padding: 60px;
+	min-height: 550px;
+}
+
+#qeros-textile p{
+	font-family: "Gentium Book Basic", Georgia, serif;
+	font-size: 32px;
+	color: #d83027;
+	line-height: 40px;
+	position: relative;
+	z-index: 100;
+}
+
+#qeros-textile-container{
+	width: 50%;
+	min-width: 320px;
+	max-width: 420px;
+}
+
+#qeros-crowd {
+	background: url('../images/qeros-crowd.jpg');
+	background-position: center center;
+	background-size: cover;
+	min-height: 800px;	
+}
+
+#qeros-crowd .caption{
+	width: 385px;
+	top:60px;
+	left: 50px;
+}
+
+#qeros-girl {
+	background: url('../images/qeros-girl.jpg');
+	background-position: center center;
+	background-size: cover;
+	min-height: 800px;	
+}
+
+#qeros-girl .caption {
+	width: 270px;
+	bottom: 40px;
+	right: 80px;
+	background: transparent;
+	color: #fff;
+	font-family: "Apercu Bold", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+#qeros-silhouette {
+	background: url('../images/qeros-silhouette.jpg') no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 700px;	
+}
+
+#qeros-silhouette .caption{
+	max-width: 490px;
+	top: 100px;
+	left: 50px;
+	background: transparent;
+	color: #214374;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+#qeros-where {
+	min-height: 650px;
+	position: relative;
+}
+
+#qeros-where-globe {
+	background: url('../images/qeros-where-globe.png') no-repeat;
+	background-position: 300px 100px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	min-width: 1000px;
+	min-height: 400px;
+}
+
+#qeros-where-label-container {
+	height: 300px;
+	position: absolute;
+	bottom:160px;
+	right: 60px;
+}
+
+#qeros-where-label {
+	background: #c0817a;
+	color: #332f2d;
+	font-family: "Apercu Bold", "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+	padding: 12px 12px 12px 12px;
+}
+
+#qeros-where-dottedline {
+	background-image: url('../images/qeros-where-dot.png');
+	background-size: contain;
+	width: 5px;
+	height: 330px;
+	margin-top: -2px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 12px;
+	letter-spacing: 8px;
+	
+/*
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+*/
+}
+
+#qeros-where-container{
+	width: 360px;
+	position: absolute;
+}
+
+#qeros-where h1 {
+	font-size: 48px;
+	line-height: 56px;
+}
+
+#qeros-where hr {
+	width: 350px;
+}
+
+
+#qeros-llamas {
+	background: url('../images/qeros-llamas.jpg');
+	background-position: left center;
+	background-size: cover;
+	min-height: 700px;	
+}
+
+#qeros-llamas .caption {
+	width: 300px;
+	top: 50px;
+	right: 90px;
+}
+
+/* WILLKA YACHAY
+================================================== */
+
+#willka-cover {
+	background-image: url('../images/willka-cover.jpg');
+	background-position: center center;
+	background-size: cover;
+	min-height: 800px;
+	position: relative;
+}
+
+#willka-cover-container{
+	position: absolute; 
+	width: 320px;
+	left: 105px;
+	bottom: 150px;
+}
+
+#willka-cover h1{
+	font-size: 100px;
+	line-height: 90px;
+	padding-bottom: 16px;
+	width: 350px;
+}
+
+#willka-cover h2{
+	font-size: 24px;
+	margin-left: 14px;
+}
+
+#willka-brown hr{
+	width: 586px;
+}
+
+#willka-schools {
+	background: url('../images/willka-schools.jpg');
+	background-position: center center;
+	background-size: cover;
+	min-height: 700px;	
+}
+
+#willka-schools .caption {
+	width: 300px;
+	top: 50px;
+	right: 90px;
+}
+
+#willka-primary {
+	background: url('../images/willka-primary.jpg');
+	background-position: center center;
+	background-size: cover;
+	min-height: 700px;	
+}
+
+#willka-primary .caption {
+	width: 300px;
+	top: 50px;
+	right: 90px;
+}
+
+#willka-colegio {
+	background: url('../images/willka-colegio.jpg');
+	background-position: center center;
+	background-size: cover;
+	min-height: 700px;	
+}
+
+#willka-colegio .caption {
+	width: 300px;
+	top: 50px;
+	right: 90px;
+}
+
+
+/* PROJECTS
+================================================== */
+
+#willka-projects {
+	position: relative;
+}
+
+#willka-projects-title h1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	line-height: 60px;
+	margin-left: -100px;
+	margin-top:-60px;
+	font-size: 54px;
+	font-family: "Apercu Bold", "Helvetica Neue", Helvetica, sans-serif;
+	color: #fff;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+}
+
+#flexslider {
+	border: 0px;
+	margin: 0px;
+}
+
+.flex-direction-nav a {
+	width: 70px;
+	height: 70px;
+	margin: -20px 0 0; 
+	background: url(../images/arrows.svg) no-repeat 0 0; 
+}
+
+.flex-direction-nav .flex-next {
+	background-position: 100% 0; 
+	right: -70px; 
+}
+
+.flex-direction-nav .flex-prev {
+	left: -70px;
+}
+
+.flex-control-nav {
+	bottom: 20px;
+}
+
+.flex-control-paging li a {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.flex-control-paging li a:hover {
+	background: rgba(255, 255, 255, 0.75);
+}
+
+.flex-control-paging li a.flex-active {
+	background: rgba(255, 255, 255, 0.9);
+}
+
+
+.slidecontainer {
+	position: relative;
+}
+
+ul.slides .caption{
+	position: absolute;
+	z-index: 10;
+	width: 400px;
+}
+
+li.slide {
+	position: relative;
+	height: 700px;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+
+li.slide div.caption h1{
+	font: 18px "Apercu Bold", "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: bold;
+	margin-bottom: 8px;
+	color: #d83027;
+}
+
+#slide-foodsecurity {
+	background-image: url('../images/projects-foodsecurity.jpg');
+}
+
+#slide-foodsecurity .caption {
+	bottom:60px;
+	left: 90px;
+	max-width: 400px;
+}
+
+#slide-weavingcooperative {
+	background-image: url('../images/projects-weavingcooperative.jpg');
+}
+#slide-weavingcooperative .caption {
+	left:90px;
+	bottom:60px;
+}
+
+
+#slide-musicpreservation {
+	background-image: url('../images/projects-musicpreservation.jpg');
+}
+#slide-musicpreservation .caption {
+	bottom:60px;
+	right: 90px;
+	max-width: 400px;
+}
+
+#slide-traditionalmedicine {
+	background-image: url('../images/projects-traditionalmedicine.jpg');
+}
+#slide-traditionalmedicine .caption {
+	bottom:60px;
+	left: 90px;
+	max-width: 380px;
+}
+
+#slide-incanmathematics {
+	background-image: url('../images/projects-incanmathematics.jpg');
+}
+#slide-incanmathematics .caption {
+	top:45%;
+	left: 90px;
+	max-width: 300px;
+}
+
+#slide-alternativeenergy {
+	background-image: url('../images/projects-alternativeenergy.jpg');
+	background-position: left center;
+}
+#slide-alternativeenergy .caption {
+	bottom:60px;
+	right: 90px;
+	max-width: 400px;
+}
+
+/* ABOUT
+================================================== */
+
+#about-title{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#about-team {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#about-team h1{
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+#about-title h1{
+	font-size: 54px;
+	margin-top: 30px;
+}
+
+#about-title hr {
+	width: 230px;
+}
+
+#about-team-ul {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+}
+
+#about-team-ul li {
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 230px;
+	margin-bottom: 10px;
+}
+
+#about-team .about-team-container {
+	width: 180px;
+	height: 180px;
+	overflow: hidden;
+	margin: 10px;
+}
+
+#about-team .about-team-container img{
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 0px 4px 12px rgba(0,0,0,0.8);
+	-webkit-box-shadow: inset 0px 4px 12px rgba(0,0,0,0.8);
+	-moz-box-shadow: inset 0px 4px 8px rgba(0,0,0,0.8);
+}
+
+#about-team li h1{
+	font-weight: bold;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+	line-height: 18px;
+}
+
+#about-bottom-container {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 30px;
+}
+
+#about-allies img{
+	max-width: 200px;
+	max-height: 60px;
+	margin: 18px;
+	float: left;
+}
+
+#about-bottom-container h1{
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+#about-story {
+	margin-right: 20px;
+}
+
+footer {
+	background-image: url(../images/footer.jpg);
+	background-position: center center;
+	background-size: cover;
+	min-height: 700px;
+	position: relative;
+	color: #fff;
+	text-align: center;
+}
+
+#footer-container {
+	margin: auto;
+	max-width: 500px;
+	padding-top: 100px;
+}
+
+
+#footer-contact, #footer-donate{
+	margin-bottom: 60px;
+}
+
+#footer-contact hr, #footer-donate hr{
+	height: 3px;
+	background-color: #fff;
+	color: #fff;
+	margin: 24px auto 24px auto;
+	border: none;	
+	width: 400px;
+	text-align: center;
+}
+
+#footer-contact h1, #footer-donate h1{
+	font-family: "Apercu Regular", "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 32px;
+	line-height: 36px;
+}
+
+#footer-contact a{
+	font-family: "Apercu Regular", "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 32px;
+	line-height: 36px;
+	text-decoration: none;	
+	color:#fff;
+}
+
+#footer-contact a:hover{
+	color: #d83027;
+}
+
+#donate-button{
+	margin-top: 10px;
+	cursor: pointer;
+	width: 400px;
+	padding: 15px;
+	font-family: "Apercu Regular", "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 32px;
+	color: #fff;
+	line-height: 36px;
+	border: 3px solid #fff;
+	background: rgba(255,255,255,0.35);
+	border-radius: 3px;
+}
+
+#donate-button:hover{
+	font-size: 32px;
+	color: #d83027;
+	border-color: #d83027;
+	background: rgba(255,255,255,0.35);
+}
+
+#donate-button:active{
+	background: #d83027;
+	color:#fff;
+}
+
+#footer-donate p{
+	font-family: "Gentium Book Basic", Georgia, serif;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	margin-top:20px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#copyright{
+	font-family: "Gentium Book Basic", Georgia, serif;
+	font-size: 13px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	
+}
+
+/* ANIMATIONS
+================================================== */
+
+
+@-webkit-keyframes scrollDown
+{
+	0%		{-webkit-transform: translateY(0px);}
+	11%		{-webkit-transform: translateY(15px);}
+	22%		{-webkit-transform: translateY(0px);}
+	33%		{-webkit-transform: translateY(15px);}
+	44%		{-webkit-transform: translateY(0px);}
+}
+	
+	@-moz-keyframes scrollDown
+	{
+		0%		{-moz-transform: translateY(0px);}
+		11%		{-moz-transform: translateY(15px);}
+		22%		{-moz-transform: translateY(0px);}
+		33%		{-moz-transform: translateY(15px);}
+		44%		{-moz-transform: translateY(0px);}
+	}
+	
+	@-ms-keyframes scrollDown
+	{
+		0%		{-ms-transform: translateY(0px);}
+		11%		{-ms-transform: translateY(15px);}
+		22%		{-ms-transform: translateY(0px);}
+		33%		{-ms-transform: translateY(15px);}
+		44% 	{-ms-transform: translateY(0px);}
+	}
+	
+	@-o-keyframes scrollDown
+	{
+		0%		{-o-transform: translateY(0px);}
+		11%		{-o-transform: translateY(15px);}
+		22%		{-o-transform: translateY(0px);}
+		33%		{-o-transform: translateY(15px);}
+		44%		{-o-transform: translateY(0px);}
+	}
+	
+	@keyframes scrollDown
+	{
+		0%		{transform: translateY(0px);}
+		11%		{transform: translateY(15px);}
+		22%		{transform: translateY(0px);}
+		33%		{transform: translateY(15px);}
+		44%	    {transform: translateY(0px);}
+	}
+	
+
+@font-face {
+	font-family: 'Apercu Regular';
+	src: url('apercu_regular.otf');
+}
+
+@font-face {
+	font-family: 'Apercu Bold';
+	src: url('apercu_bold.otf');
+}
