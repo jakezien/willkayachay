@@ -7,29 +7,29 @@
 <!--  Set viewport per device  -->
   <script>
     (function(doc) {
-        var viewport = document.getElementById(&lsquo;viewport&rsquo;);
+        var viewport = document.getElementById('viewport');
         if ( navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)) {
-            doc.getElementById(&ldquo;viewport&rdquo;).setAttribute(&ldquo;content&rdquo;, &ldquo;width=960px, initial-scale=0.0&rdquo;);
+            doc.getElementById('viewport').setAttribute('content', 'width=960px, initial-scale=0.0';);
         } else if ( navigator.userAgent.match(/iPad/i) ) {
-            doc.getElementById(&ldquo;viewport&rdquo;).setAttribute(&ldquo;content&rdquo;, &ldquo;width=device-width&rdquo;);
+            doc.getElementById('viewport').setAttribute('content', 'width=device-width');
         }
     }(document));
   </script>
   <link rel="shortcut icon" href="images/favicon.ico">
-  <!&mdash;[if lt IE 9]>
+  <!--[if lt IE 9]-->
   <script src="/js/html5shiv.js"></script>
-  <![endif]&mdash;>
+  <!--[endif]-->
 <!--  Google Webfonts  -->
   <script type="text/javascript">
-	WebFontConfig = { fontdeck: { id: &lsquo;28178&rsquo; } };
+	WebFontConfig = { fontdeck: { id: '28178'; } };
 	
 	(function() {
-	  var wf = document.createElement(&lsquo;script&rsquo;);
-	  wf.src = (&lsquo;https:&rsquo; == document.location.protocol ? &lsquo;https&rsquo; : &lsquo;http&rsquo;) +
-	  &lsquo;://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js&rsquo;;
-	  wf.type = &lsquo;text/javascript&rsquo;;
-	  wf.async = &lsquo;true&rsquo;;
-	  var s = document.getElementsByTagName(&lsquo;script&rsquo;)[0];
+	  var wf = document.createElement('script');
+	  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+	  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+	  wf.type = 'text/javascript';
+	  wf.async = 'true';
+	  var s = document.getElementsByTagName('script')[0];
 	  s.parentNode.insertBefore(wf, s);
 	})();
   </script>
@@ -41,18 +41,18 @@
   <link href='css/reset.css' rel='stylesheet' type='text/css'>
   <link href='css/flexslider.css' rel='stylesheet' type='text/css'>
   <link href='css/style.css' rel='stylesheet' type='text/css'>
-<!--    Google Analytics -->
+<!-- Google Analytics -->
   <script type="text/javascript"> 
 	
 	  var _gaq = _gaq || [];
-	  _gaq.push([&lsquo;_setAccount&rsquo;, &lsquo;UA-37653768-1&rsquo;]);
-	  _gaq.push([&lsquo;_setDomainName&rsquo;, &lsquo;willkayachay.org&rsquo;]);
-	  _gaq.push([&lsquo;_trackPageview&rsquo;]);
+	  _gaq.push(['_setAccount', 'UA-37653768-1']);
+	  _gaq.push(['_setDomainName', 'willkayachay.org']);
+	  _gaq.push(['_trackPageview']);
 	
 	  (function() {
-	    var ga = document.createElement(&lsquo;script&rsquo;); ga.type = &lsquo;text/javascript&rsquo;; ga.async = true;
-	    ga.src = (&lsquo;https:&rsquo; == document.location.protocol ? &lsquo;https://ssl&rsquo; : &lsquo;http://www&rsquo;) + &lsquo;.google-analytics.com/ga.js&rsquo;;
-	    var s = document.getElementsByTagName(&lsquo;script&rsquo;)[0]; s.parentNode.insertBefore(ga, s);
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
 
   </script>
@@ -64,18 +64,16 @@
 	<ul>
 	  <li id="nav-top"><a href="#">Top</a></li>
 	  <li id="nav-willka"><a href="#">Willka<br/>Yachay</a></li>
-  	  <li id="nav-about"><a href="#">About<br/>Us</a></li>
+  	  <li id="nav-about"><a href="#">About</a></li>
   	  <li id="nav-qeros"><a href="#">Q&rsquo;eros</a></li>
 	  <li id="nav-donate"><a href="#">Donate</a></li>
-  	  <li id="nav-share"><a href="#">Share</a></li>
+  	  <li id="nav-contact"><a href="#">Contact</a></li>
 	</ul>
 	</nav>
 	
 	<section id="intro-cover">
 		<div id="intro-cover-logo"></div>
-		<div id="intro-cover-tagline">
-			<p>Empowering the Q&rsquo;eros nation</p>
-		</div>
+			<p>Empowering the<br/>Q&rsquo;eros nation</p>
 		<div id="intro-cover-scrollDown"></div>
 	</section>
 	
@@ -88,7 +86,7 @@
 	
 	<section class="brown" id="intro-brown">
 		<div class='brown-container'>
-			<h1>Considered Peru&rsquo;s last Incan community,<br/>the Q&rsquo;eros Nation is a cultural treasure,<br/>yet its communities lack basics such as electricity, clean water, health care, and food security.</h1>
+			<h1>Considered Peru&rsquo;s last Incan community, the Q&rsquo;eros Nation is a cultural treasure, yet its communities lack basics such as electricity, clean water, health care, and food security.</h1>
 			<hr>
 			<div class="brown-left">
 				<p>Willka Yachay&rsquo;s goal is to empower the next generation of the indigenous Q&rsquo;eros nation of Peru to become leaders who elevate their standard of living, guide their community toward sustainable modernity, and revitalize their cultural identity.</p>
@@ -99,10 +97,8 @@
 	</section>
 	
 	<section class="chapterCover" id="willka-cover">
-		<div id="willka-cover-container">
-			<h1>Willka Yachay</h1>
-			<h2>(SACRED KNOWLEDGE)</h2>
-		</div>
+		<h1>Willka Yachay</h1>
+		<h2>(SACRED KNOWLEDGE)</h2>
 	</section>
 	
 	<section class="brown" id="willka-brown">
@@ -151,51 +147,22 @@
 	<section id="willka-students">
 		<div id="flexslider-students" class="flexslider">
 			<ul id="slides" class="slides">
-				<li class="slide" id="slide-alternativeenergy">
-					<div class="caption">
-						<h1>Alternative Energy</h1>
-						<p>The alternative energy projects we support are designed to teach mathematics, physics and engineering, and improve the quality of life in Q&rsquo;eros.</p>
-						<br/>
-						<p>Willka Yachay&rsquo;s first successful energy project was a hydro-electric generator hand built and deployed by our high school students and their teacher. The turbine now provides electricity for several classrooms.</p>
-						<p>We have supplied and installed one solar panel system and will implement more in the future with an eye toward bringing electricity to all of Q&rsquo;eros.</p>
-					</div>
-				</li>
-				<li class="slide" id="slide-musicpreservation">
-					<div class="caption">
-						<h1>Music Preservation</h1>
-						<p>Student musicians and ethnomusicologist, Dr. Holly Wissler, are working together to recover, preserve and practice traditional songs based on their own ethnographic research. They perform at community events throughout the region.</p>
-					</div>
-				</li>				
-				<li class="slide" id="slide-traditionalmedicine">
-					<div class="caption">
-						<h1>Traditional Medicine</h1>
-						<p>Working with traditional Q&rsquo;eros healers, or curanderos, primary and secondary students are learning about native medicinal plants and their uses. Willka Yachay&rsquo;s goal is to develop a community health center that will combine modern medicine and ancient wisdom.</p>
-					</div>
-				</li>
-				<li class="slide" id="slide-weavingcooperative">
-					<div class="caption">
-						<h1>Weaving Cooperative</h1>
-						<p>Willka Yachay is helping the families of Ch&rsquo;allma Chimpana form a cooperative to sell their beautiful traditional weavings at a just price, locally and abroad.</p>
-					</div>
-				</li>				
-				<li class="slide" id="slide-foodsecurity">
-					<div class="caption">
-						<h1>Food Security</h1>
-						<p>The ethnic high school&rsquo;s first learning project was building a masonry oven that bakes bread and heats water for Qocha Moqo. Willka Yachay&rsquo;s vision is to support other villages in doing the same.</p>
-						<br/>
-						<p>Willka Yachay and community members are planning to build a trout pond and more greenhouses in 2013 to supplement the local diet of potatoes and alpaca with fresh fish and vegetables.</p>
-					</div>
-				</li>		 
-				<li class="slide" id="slide-incanmathematics">
-					<div class="caption">
-						<h1>Incan Mathematics</h1>
-						<p>The ethnic high school director, Jes&uacute;s Rios Mencia, has researched and recovered the Incan mathematical device, Yupana, an ancient calculator. High school students have learned the system and teach it to younger students within Q&rsquo;eros and at schools and universities in Cusco.</p>
-					</div>
-				</li>
+				<li class="slide photo" id="slide-students-0"></li>
+				<li class="slide photo" id="slide-students-1"></li>
+				<li class="slide photo" id="slide-students-2"></li>
+				<li class="slide photo" id="slide-students-3"></li>
+				<li class="slide photo" id="slide-students-4"></li>
+				<li class="slide photo" id="slide-students-5"></li>
+				<li class="slide photo" id="slide-students-6"></li>
+				<li class="slide photo" id="slide-students-7"></li>
+				<li class="slide photo" id="slide-students-8"></li>
+				<li class="slide photo" id="slide-students-9"></li>
+				<li class="slide photo" id="slide-students-10"></li>
+				<li class="slide photo" id="slide-students-11"></li>
 			</ul>
 		</div>
-		<div id="willka-projects-title" class="flextitle">
-			<h1>Our Projects</h1>
+		<div id="willka-students-title" class="flextitle">
+			<h1>Our Students</h1>
 		</div>
 	</section>
 	
@@ -354,9 +321,9 @@
 					<h1>Our Allies</h1>
 					<img src="images/allies-charitychallenge.png">
 					<img src="images/allies-friendsofindreni.png">
+					<img src="images/allies-projectsforpeace.png">
 					<img src="images/allies-pachamama.png">
 					<img src="images/allies-ongdqespina.png">
-					<img src="images/allies-projectsforpeace.png">
 				</div>
 			</div>
 			<div class="clearfix"></div>
@@ -365,89 +332,89 @@
 	
 	<section id="new"></section>
 	
-	<section class="chapterCover" id="qeros-cover">
-		<div id="qeros-cover-container">
-			<h1>Q&rsquo;eros</h1>
-			<h2>(KEH-ros)</h2>
+	<section id="qeros">
+		<div id="flexslider-qeros" class="flexslider">
+			<ul id="slides" class="slides">
+				<li class="slide chapterCover" id="qeros-cover">	
+					<div id="qeros-cover-container">
+						<h1>Q&rsquo;eros</h1>
+						<h2>(KEH-ros)</h2>
+					</div>
+				</li>
+				
+				<li class="slide photo" id="qeros-textile">
+					<div id="qeros-textile-container">
+						<p>The Q&rsquo;eros Nation has been designated by Peru&rsquo;s Ministry of Culture a &ldquo;national living cultural patrimony&rdquo; for the continuity of its ancient Andean traditions.</p>
+						<br/>
+						<p>Considered to be the &ldquo;&uacute;ltimo ayllu inka,&rdquo; or the last Incan community of Peru, the Q&rsquo;eros strive to preserve and promote their indigenous ethnic and cultural identity.</p>
+					</div>
+				</li>
+				
+				<li class="slide photo" id="qeros-crowd">
+					<div class="caption">
+						<p>Q&rsquo;eros live a hardworking life immersed in nature: they perform offerings to <i>Pacha Mama</i>, Mother Earth, and to the <i>Apus</i>, mountain spirits, in exchange for the well being of their animals, crops and themselves.</p>
+					</div>
+				</li>
+				
+				<li class="slide photo" id="qeros-girl">
+					<div class="caption">
+						<p>Worldview concepts of <i>ayni</i>, the importance of reciprocal sharing, and <i>animu</i>, awareness of an animated essence in all things, shape their interactions with each other and their environment. Love, joy, perseverance, intrinsic integrity, and the ability to &ldquo;simply just be&rdquo; suffuse their daily lives.</p>
+					</div>
+				</li>
+				
+				<li class="slide photo" id="qeros-llamas">
+					<div class="caption">
+						<p>Q&rsquo;eros travel between and utilize three different ecosystems that span from 15,500 feet down to 6,000 feet above sea level: from snowy peaks to ceja de selva, &ldquo;the eyebrow of the jungle.&rdquo;</p>
+						<br/>
+						<p>They raise llamas and alpacas at the highest altitudes, descend to grow potatoes and raise sheep, and descend further to grow corn, squash and other vegetables and to harvest bamboo and wood for buildings, looms and flutes.</p>
+					</div>
+				</li>				
+				
+				<li class="slide photo" id="qeros-silhouette">
+					<div class="caption">
+						<p>Despite the harsh conditions to which they are exposed and a history as targets of discrimination &amp; marginalization, the Q&rsquo;eros people endure.</p>
+					</div>
+				</li>
+				
+				
+			</ul>
 		</div>
 	</section>
-	
-	<section class="photo" id="qeros-textile">
-<!-- 		<div id="weaving"></div> -->
-		<div id="qeros-textile-container">
-			<p>The Q&rsquo;eros Nation has been designated by Peru&rsquo;s Ministry of Culture a &ldquo;national living cultural patrimony&rdquo; for the continuity of its ancient Andean traditions.</p>
-			<br/>
-			<p>Considered to be the &ldquo;&uacute;ltimo ayllu inka,&rdquo; or the last Incan community of Peru, the Q&rsquo;eros strive to preserve and promote their indigenous ethnic and cultural identity.</p>
-		</div>
-	</section>
-	
-	<section class="photo" id="qeros-crowd">
-		<div class="caption">
-			<p>Q&rsquo;eros live a hardworking life immersed in nature: they perform offerings to <i>Pacha Mama</i>, Mother Earth, and to the <i>Apus</i>, mountain spirits, in exchange for the well being of their animals, crops and themselves.</p>
-		</div>
-	</section>
-	
-	<section class="photo" id="qeros-girl">
-		<div class="caption">
-			<p>Worldview concepts of <i>ayni</i>, the importance of reciprocal sharing, and <i>animu</i>, awareness of an animated essence in all things, shape their interactions with each other and their environment. Love, joy, perseverance, intrinsic integrity, and the ability to &ldquo;simply just be&rdquo; suffuse their daily lives.</p>
-		</div>
-	</section>
-	
-	<section class="photo" id="qeros-silhouette">
-		<div class="caption">
-			<p>Despite the harsh conditions to which they are exposed and a history as targets of discrimination &amp; marginalization, the Q&rsquo;eros people endure.</p>
-		</div>
-	</section>
-	
+		
 	<section class="brown" id="qeros-where">
-		<div id="qeros-where-globe">
-			<div id="qeros-where-label-container">
-				<div id="qeros-where-label">Q&rsquo;eros</div>
-				<div id="qeros-where-dottedline"></div>
+			<div id="qeros-where-globe">
+				<div id="qeros-where-label-container">
+					<div id="qeros-where-label">Q&rsquo;eros</div>
+					<div id="qeros-where-dottedline"></div>
+				</div>
 			</div>
-		</div>
-		<div id="qeros-where-container">
-			<h1>Where<br>in the world</h1>
-			<hr>
-			<p>The remote villages of Q&rsquo;eros are located at 14,500 feet above sea level in the snow-capped Cordillera Vilcanota range, the highest mountain chain in southeastern Peru. There are over 2,000 people who live in the nation&rsquo;s fourteen villages spread across many river valleys.</p>
-		</div>
+			<div id="qeros-where-container">
+				<h1>Where<br>in the world</h1>
+				<hr>
+				<p>The remote villages of Q&rsquo;eros are located at 14,500 feet above sea level in the snow-capped Cordillera Vilcanota range, the highest mountain chain in southeastern Peru. There are over 2,000 people who live in the nation&rsquo;s fourteen villages spread across many river valleys.</p>
+			</div>
 	</section>
 	
-	<section class="photo" id="qeros-llamas">
-		<div class="caption">
-			<p>Q&rsquo;eros travel between and utilize three different ecosystems that span from 15,500 feet down to 6,000 feet above sea level: from snowy peaks to ceja de selva, &ldquo;the eyebrow of the jungle.&rdquo;</p>
-			<br/>
-			<p>They raise llamas and alpacas at the highest altitudes, descend to grow potatoes and raise sheep, and descend further to grow corn, squash and other vegetables and to harvest bamboo and wood for buildings, looms and flutes.</p>
-		</div>
-	</section>
-	
-	<footer class="photo">
+	<footer class="photo" id="contact">
 		<div id="footer-container">
 			<div id="footer-contact">
 				<h1>Contact Us</h1>
 				<hr>
 				<script type="text/javascript">
-				//<![CDATA[
-				<!&mdash;
-				var x=&rdquo;function f(x,y){var i,o=&#34;&#34;,l=x.length;for(i=0;i<l;i++){if(i>(90+y))&rdquo; +
-				&ldquo;y*=2;y%=127;o+=String.fromCharCode(x.charCodeAt(i)^(y++));}return o;}f(&#34;<.&rdquo; +
-				&ldquo;2>*6&#92;017&#92;017B&#92;005L&#92;035O&#92;034&#92;036&#92;010&#92;030K&#92;005A&#92;001RRS^&#92;034&#92;030H&#92;&rdquo;+
-				&ldquo;016Y&#92;024&#92;034&#92;024&#92;034&#92;010&#92;025Rl<mo?rnndl&#92;&#34;s&#92;&#34;nfnbR}wqTb?t6+(5<#&&#92;&rdquo; +
-				&ldquo;022&#92;010YWV&#92;&#92;]_&#92;003&#92;024R&#92;020@&#92;006&#92;023C&#92;013LQR@V^&#92;037]&#92;020AFA[QMh(&rdquo; +
-				&ldquo;&#92;177/it}.vtzp%`cf+>yn,{5?9+&#92;033/t4wd&#92;035&#92;023&#92;007&#92;027&#92;021&#92;027&#92;010G&#92;&rdquo;+
-				&ldquo;007G&#92;031&#92;036&#92;016&#92;036&#92;032&#92;035XA^&#92;034&#92;030&#92;&#92;M&#92;n&#92;036QXRHER&#92;&#92; 5>.b&rdquo; +
-				&ldquo;&#92;&#34;726RBL&#92;&#34;&#92;&#92;65>BbH22ZRlb&#92;&#34;S45>BbJ12ZRVb&#92;&#34;&#92;&#92;^D<.&#92;016&#92;&#34;&#92;&#92;PMO&rdquo; +
-				&ldquo;Ux!DMI@Vi!qyt|:&#92;005:5H.&#92;177)&#92;tO&#92;&#92;^`vz&#92;021RQi&#92;177k9O&#92;030ndct}T&#92;0222&rdquo; +
-				&ldquo;06RB&#92;nL0^Z=/&#92;016&#92;&#34;&#92;&#92;93<.b&#92;&#34;716RB&#92;010L0^Z8-&#92;016&#92;&#34;&#92;&#92;N4=.b&#92;&#34;02&rdquo; +
-				&ldquo;6RB&#92;tM0^Z=-&#92;016&#92;&#34;&#92;&#92;24>BbK32ZRS&#92;014.n^Z8/&#92;016&#92;&#34;&#92;&#92;25>BbO02ZRV&#92;01&rdquo; +
-				&ldquo;0N0^ZTYr&#92;014&#92;&#92;^0?.b&#92;&#34;426RB&#92;nL0^Z82&#92;024&#92;014/6:;B&#92;034&#92;&#34;&#92;&#92;7<>B&#92;0&rdquo; +
-				&ldquo;34Vf&#92;177=a>P&#92;014uvc|c&#92;005W))-w6`Wi*rO{Z&#92;021Cpgf}&#92;020&#92;006(gba]L&#92;037hA&rdquo; +
-				&ldquo;kalXPglo|jmC+m=9,&#92;017C%{}&rsquo;5&#92;025&#92;027;n:g%&#92;016Ci*tax&#92;005&#92;026tehkr&#92;020&#92;&rdquo;+
-				&ldquo;006=n*R<b\\\\=m*g>L&#92;037vy/w2FVf&#92;&#34;hawJ&#92;035nw`,7&#34;,90)&rdquo;                    ;
-				while(x=eval(x));
-				//&mdash;>
-				//]]>
-			</script>
+					//<![CDATA[
+					<!--
+					var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+					"=48){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+					".substr(0,ol);}f(\")29,\\\"{710\\\\500\\\\420\\\\630\\\\500\\\\[620\\\\400\\"+
+					"\\PDZ230\\\\JSYSNWLGGF@_gICJJ430\\\\300\\\\|=B ywnpl74Isa}?infnmrkbdkorDldo" +
+					"iD220\\\\010\\\\720\\\\320\\\\030\\\\520\\\\U*H220\\\\620\\\\000\\\\130\\\\" +
+					"P610\\\\ROD500\\\\600\\\\410\\\\430\\\\610\\\\420\\\\220\\\\J720\\\\410\\\\" +
+					"400\\\\r\\\\*=28\\\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirt" +
+					"S=+o;721=%y{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")" ;
+					while(x=eval(x));
+					//-->
+					//]]>
+				</script>				
 			</div>
 			<div id="footer-donate">
 				<h1>Support Our Work</h1>
