@@ -73,9 +73,10 @@ section.brown hr {
 	border: none;	
 }
 
-section.photo {
+section.photo, ul.photo {
 	background: 50% 0 no-repeat;
 	min-height: 700px;
+	position: relative
 }
 
 section.chapterCover {
@@ -103,10 +104,6 @@ section.chapterCover h2{
 	margin: 0px;
 }
 
-section.photo {
-	position: relative;
-}
-
 div.caption {
 	background: #fff;
 	font: 16px "Apercu Regular", "Helvetica Neue", Helvetica, serif;
@@ -114,7 +111,86 @@ div.caption {
 	padding: 24px;
 	position: absolute;
 	color: #d83027;
+	clear: both;
 }
+
+/* FLEXSLIDER
+------------------------------- */
+
+div.flextitle {
+	line-height: 60px;
+	font-size: 54px;
+	font-family: "Apercu Bold", "Helvetica Neue", Helvetica, sans-serif;
+	color: #fff;
+	font-weight: bold;
+	font-style: normal;
+	z-index: 10;
+}
+
+.flexslider {
+	border: 0px;
+	margin: 0px;
+}
+
+.flex-direction-nav a {
+	width: 70px;
+	height: 70px;
+	margin: -20px 0 0; 
+	background: url(../images/arrows.svg) no-repeat 0 0; 
+}
+
+.flex-direction-nav .flex-next {
+	background-position: 100% 0; 
+	right: -70px; 
+}
+
+.flex-direction-nav .flex-prev {
+	left: -70px;
+}
+
+.flex-control-nav {
+	bottom: 20px;
+}
+
+.flex-control-paging li a {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.flex-control-paging li a:hover {
+	background: rgba(255, 255, 255, 0.75);
+}
+
+.flex-control-paging li a.flex-active {
+	background: rgba(255, 255, 255, 0.9);
+}
+
+
+.slidecontainer {
+	position: relative;
+}
+
+ul.slides .caption{
+	position: absolute;
+	z-index: 10;
+	width: 400px;
+}
+
+li.slide {
+	position: relative;
+	height: 700px;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+
+li.slide div.caption h1{
+	font: 18px "Apercu Bold", "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: bold;
+	margin-bottom: 8px;
+	color: #d83027;
+}
+
 
 
 /* NAV
@@ -172,6 +248,15 @@ nav li{
 	margin-left:auto;
 	margin-right:auto;
 
+}
+
+#intro-cover-tagline{
+	color: #473933;
+	font-family: "Apercu Regular", "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #intro-cover-scrollDown {
@@ -451,16 +536,24 @@ nav li{
 	width: 586px;
 }
 
-#willka-schools {
+#willka-schools-title {
+	position: absolute;
+	top: 60px;
+	left: 90px;
+	width: 200px;
+	float: left;
+}
+
+#willka-schools-cover {
 	background: url('../images/willka-schools.jpg');
 	background-position: center center;
 	background-size: cover;
 	min-height: 700px;	
 }
 
-#willka-schools .caption {
+#willka-schools-cover .caption {
 	width: 300px;
-	top: 50px;
+	bottom: 60px;
 	right: 90px;
 }
 
@@ -472,7 +565,7 @@ nav li{
 }
 
 #willka-primary .caption {
-	width: 300px;
+	width: 500px;
 	top: 50px;
 	right: 90px;
 }
@@ -485,97 +578,27 @@ nav li{
 }
 
 #willka-colegio .caption {
-	width: 300px;
-	top: 50px;
-	right: 90px;
+	width: 500px;
+	bottom: 60px;
+	left: 50%;
+	margin-left: -250px;
 }
 
 
 /* PROJECTS
 ================================================== */
 
-#willka-projects {
-	position: relative;
-}
-
-#willka-projects-title h1{
+#willka-projects-title {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	width: 200px;
-	line-height: 60px;
 	margin-left: -100px;
 	margin-top:-60px;
-	font-size: 54px;
-	font-family: "Apercu Bold", "Helvetica Neue", Helvetica, sans-serif;
-	color: #fff;
-	font-weight: bold;
-	font-style: normal;
-	text-align: center;
 }
 
-#flexslider {
-	border: 0px;
-	margin: 0px;
-}
-
-.flex-direction-nav a {
-	width: 70px;
-	height: 70px;
-	margin: -20px 0 0; 
-	background: url(../images/arrows.svg) no-repeat 0 0; 
-}
-
-.flex-direction-nav .flex-next {
-	background-position: 100% 0; 
-	right: -70px; 
-}
-
-.flex-direction-nav .flex-prev {
-	left: -70px;
-}
-
-.flex-control-nav {
-	bottom: 20px;
-}
-
-.flex-control-paging li a {
-	background: rgba(255, 255, 255, 0.5);
-}
-
-.flex-control-paging li a:hover {
-	background: rgba(255, 255, 255, 0.75);
-}
-
-.flex-control-paging li a.flex-active {
-	background: rgba(255, 255, 255, 0.9);
-}
-
-
-.slidecontainer {
+#willka-projects {
 	position: relative;
-}
-
-ul.slides .caption{
-	position: absolute;
-	z-index: 10;
-	width: 400px;
-}
-
-li.slide {
-	position: relative;
-	height: 700px;
-	background-size: cover;
-	background-position: center center;
-	position: relative;
-}
-
-
-li.slide div.caption h1{
-	font: 18px "Apercu Bold", "Helvetica Neue", Helvetica, sans-serif;
-	font-weight: bold;
-	margin-bottom: 8px;
-	color: #d83027;
 }
 
 #slide-foodsecurity {
