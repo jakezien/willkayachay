@@ -878,14 +878,44 @@ footer {
 	margin-right: auto;
 }
 
+#footer-social {
+	text-align: center;
+	width: 400px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer-social a{
+	width: 85px;
+	height: 36px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: inline-block;
+}
+#footer-social a:hover{
+	background-position: bottom center;
+}
+
+.footer-social-twitter {
+	background-image: url(../images/twitter.svg);
+}
+.footer-social-facebook {
+	background-image: url(../images/facebook.svg);
+}
+.footer-social-instagram {
+	background-image: url(../images/instagram.svg);
+}
+
+
+
 #copyright{
 	font-family: "Gentium Book Basic", Georgia, serif;
 	font-size: 13px;
 	width: 400px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 100px;
-	
+	margin: 0px auto;
+	padding-bottom: 60px;
 }
 
 /* ANIMATIONS
