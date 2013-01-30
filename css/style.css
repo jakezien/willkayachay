@@ -131,10 +131,11 @@ div.flextitle {
 }
 
 .flex-direction-nav a {
-	width: 70px;
-	height: 70px;
-	margin: -20px 0 0; 
-	background: url(../images/arrows.svg) no-repeat 0 0;
+	width: 80px;
+	height: 80px;
+	display: block;
+	margin: -30px 0px 0px 0px; 
+	background: url(../images/arrows.svg) no-repeat;
 	overflow: visible !important; 
 }
 
@@ -232,12 +233,26 @@ nav li:hover{
 	color: #fff;
 }
 
+#nav-social {
+	cursor: pointer;
+	display: block;
+	height: 18px;
+	padding: 4px;
+	background: #fff url(../images/nav-social-red.svg) no-repeat;
+	background-position: center center;
+
+}
+
+#nav-social:hover {
+	background: #d83027 url(../images/nav-social-white.svg) no-repeat;
+	background-position: center center;
+}
+
 
 /* INTRO
 ------------------------------- */
 
 #intro-cover {
-	height: 700px;
 	background: #ffffff;
 	width: 100%;
 	color: #473933;
@@ -247,14 +262,14 @@ nav li:hover{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 }	
 
 #intro-cover-logo {
 	background: url('../images/logo.jpg');
 	width:270px;
 	height: 319px;
-	margin-top: 80px;
-	display: block;
+	margin-top: 5%;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -263,8 +278,7 @@ nav li:hover{
 	background: url('../images/scrollDown.svg');
 	width: 100px;
 	height: 100px;
-	margin-top: 80px;
-	display: block;
+	margin-top: 7%;
 	margin-left: auto;
 	margin-right: auto;
 	
@@ -929,15 +943,15 @@ footer {
 }
 
 
-#footer-contact, #footer-mailchimp {
-	margin-bottom: 80px;
+#footer-contact {
+	margin: 60px auto;
 }
 
 #footer-container hr {
 	height: 3px;
 	background-color: #fff;
 	color: #fff;
-	margin: 24px auto 24px auto;
+	margin: 30px auto 32px auto;
 	border: none;	
 	width: 400px;
 	text-align: center;
@@ -951,71 +965,23 @@ footer {
 	line-height: 36px;
 }
 
+#footer-join {
+	margin: 15px auto 26px auto;
+}
+
 #footer-contact a{
 	font-family: "Apercu Regular", "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 32px;
-	line-height: 36px;
+	line-height: 44px;
 	text-decoration: none;	
 	color:#fff;
+	display: block;
 }
 
 #footer-contact a:hover{
 	color: #d83027;
-}
-
-#mc-embedded-subscribe{
-	margin-top: 10px;
-	cursor: pointer;
-	width: 360px;
-	padding: 10px;
-	font-family: "Apercu Regular", "Helvetica Neue", Helvetica, sans-serif;
-	font-weight: normal;
-	font-style: normal;
-	font-size: 32px;
-	color: #332f2d;
-	line-height: 36px;
-	background: #fff;
-	border-radius: 2px;
-	border: none;
-}
-
-#mc-embedded-subscribe:hover, #mc-embedded-subscribe:active {
-	background: #d83027;
-	color:#fff;
-}
-
-
-
-#footer-mailchimp input[type=email]{
-	font-family: "Apercu Regular", "Helvetica Neue", Helvetica, sans-serif;
-	font-weight: normal;
-	font-size: 32px;
-	line-height: 32px;    
-	width: 380px;
-    font-weight: normal;
-    color: #fff;
-    border: none;
-    padding-top: 10px;
-    padding-bottom: 6px;
-    border-bottom: 2px dotted #fff;
-    margin-bottom: 24px;
-    background-color: transparent;
-    text-align: center;
-}
-
-#footer-mailchimp input[type=email]:focus {
-	color: #fff;
-    border-bottom: 2px dotted #fff;
-    outline: none !important;
-}
-
-#footer-mailchimp input[type=email]:hover {
-	background: #d83027;
-	color: #fff;
-    border-bottom: 2px dotted #fff;
-    outline: none !important;
 }
 
 ::-webkit-input-placeholder {
@@ -1061,20 +1027,56 @@ footer {
 	background-image: url(../images/instagram.svg);
 }
 
-
-
 #copyright{
-	font-family: "Gentium Book Basic", Georgia, serif;
-	font-size: 13px;
+	font-family: "Gentium Basic", Georgia, serif;
+	font-weight: bold;
+	font-size: 14px;
 	width: 400px;
+	padding: 120px 0px 60px 0px;
 	margin: 0px auto;
-	padding-bottom: 60px;
+/* 	margin: 400px auto 60px auto; */
 }
 
 /* ANIMATIONS
 ================================================== */
 
+	
+@-moz-keyframes scrollDown
+{
+	0%		{-moz-transform: translateY(0px);}
+	11%		{-moz-transform: translateY(15px);}
+	22%		{-moz-transform: translateY(0px);}
+	33%		{-moz-transform: translateY(15px);}
+	44%		{-moz-transform: translateY(0px);}
+}
 
+@-ms-keyframes scrollDown
+{
+	0%		{-ms-transform: translateY(0px);}
+	11%		{-ms-transform: translateY(15px);}
+	22%		{-ms-transform: translateY(0px);}
+	33%		{-ms-transform: translateY(15px);}
+	44% 	{-ms-transform: translateY(0px);}
+}
+
+@-o-keyframes scrollDown
+{
+	0%		{-o-transform: translateY(0px);}
+	11%		{-o-transform: translateY(15px);}
+	22%		{-o-transform: translateY(0px);}
+	33%		{-o-transform: translateY(15px);}
+	44%		{-o-transform: translateY(0px);}
+}
+
+@keyframes scrollDown
+{
+	0%		{transform: translateY(0px);}
+	11%		{transform: translateY(15px);}
+	22%		{transform: translateY(0px);}
+	33%		{transform: translateY(15px);}
+	44%	    {transform: translateY(0px);}
+}
+	
 @-webkit-keyframes scrollDown
 {
 	0%		{-webkit-transform: translateY(0px);}
@@ -1083,43 +1085,6 @@ footer {
 	33%		{-webkit-transform: translateY(15px);}
 	44%		{-webkit-transform: translateY(0px);}
 }
-	
-	@-moz-keyframes scrollDown
-	{
-		0%		{-moz-transform: translateY(0px);}
-		11%		{-moz-transform: translateY(15px);}
-		22%		{-moz-transform: translateY(0px);}
-		33%		{-moz-transform: translateY(15px);}
-		44%		{-moz-transform: translateY(0px);}
-	}
-	
-	@-ms-keyframes scrollDown
-	{
-		0%		{-ms-transform: translateY(0px);}
-		11%		{-ms-transform: translateY(15px);}
-		22%		{-ms-transform: translateY(0px);}
-		33%		{-ms-transform: translateY(15px);}
-		44% 	{-ms-transform: translateY(0px);}
-	}
-	
-	@-o-keyframes scrollDown
-	{
-		0%		{-o-transform: translateY(0px);}
-		11%		{-o-transform: translateY(15px);}
-		22%		{-o-transform: translateY(0px);}
-		33%		{-o-transform: translateY(15px);}
-		44%		{-o-transform: translateY(0px);}
-	}
-	
-	@keyframes scrollDown
-	{
-		0%		{transform: translateY(0px);}
-		11%		{transform: translateY(15px);}
-		22%		{transform: translateY(0px);}
-		33%		{transform: translateY(15px);}
-		44%	    {transform: translateY(0px);}
-	}
-	
 
 @font-face {
 	font-family: 'Apercu Regular';

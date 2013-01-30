@@ -42,7 +42,12 @@ $(document).ready(function() {
 	});
 	
 	$("#nav-contact").click(function () {
-		var measure=$("#footer-container").offset();
+		var measure=$("#footer-contact").offset();
+		var animationobj={'scrollTop':measure.top+'px'};
+		$('html, body').animate(animationobj, 1100);
+	});
+	$("#nav-social").click(function () {
+		var measure=$("#footer-contact").offset();
 		var animationobj={'scrollTop':measure.top+'px'};
 		$('html, body').animate(animationobj, 1100);
 	});
